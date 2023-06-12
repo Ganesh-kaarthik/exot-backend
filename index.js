@@ -1,12 +1,11 @@
 import express from 'express'
-import mongoose from 'mongoose'
 import cors  from 'cors'
 import dotenv from 'dotenv'
 
 import userRoutes from './routes/users.js'
 import questionRoutes from './routes/Question.js'
 import answerRoutes from './routes/Answers.js'
-
+import connectDB from './db.js'
 const app = express();
 
 dotenv.config()
